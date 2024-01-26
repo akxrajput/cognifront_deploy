@@ -9,15 +9,7 @@ const nodemailer = require('nodemailer');
 const ejs = require('ejs');
 
 app.set('view engine', 'ejs');
-app.use(cors(
-  
-    {
-      origin : ["https://cognifront-deploy-test.vercel.app/"] ,
-      methods : ["POST" , "GET"] ,
-      credentials : true
-      
-    }
-))
+
 
 cloudinary.config({ 
   cloud_name: 'dvdsfjxtq',
