@@ -1,0 +1,102 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Optional: Prevent scrolling */
+  }
+  
+  #myInput {
+    height: 200px;
+    width: 600px;
+    border: 5px solid rgb(0, 255, 166);
+    resize: none;
+  }
+  
+  .main-page {
+   
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .btn-edt {
+    border: none;
+    height: 45px;
+    width: 120px;
+    text-decoration: none;
+    background-color: #4dffb8;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer; /* Add cursor style */
+    transition: background-color 0.3s;
+  }
+  
+  .btn-edt:hover {
+    background-color: #45a049;
+  }
+  
+  .btns {
+    display: flex;
+    gap: 20px;
+  }
+  
+  #upload-btn {
+    text-align: center;
+  }
+  
+  .uploaded-image {
+    height: 300px;
+    width: 350px;
+    border: 5px solid #4dffb8;
+    border-radius: 8px; /* Add border-radius for a rounded look */
+    object-fit: cover; /* Ensure the image covers the container */
+  }
+  
+  #contentEditable {
+    margin-top: 60px;
+    height: 500px;
+    width: 600px;
+    border: 5px solid #4dffb8;
+    position: relative;
+    padding: 10px; /* Add padding for better aesthetics */
+    border-radius: 8px; /* Add border-radius for a rounded look */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box-shadow for a subtle effect */
+  }
+  
+  #up-img {
+    text-align: center;
+    padding-top: 6px;
+  }
+
+  #btn-last{
+    position: absolute;
+    top: 85%;
+    left: 45%;
+    height: 45px;
+    width: 140px;
+    border: none;
+    background-color:#4dffb8 ;
+    font-weight: bold;
+    border-radius: 11px;
+
+}
+  
+#btn-last:hover{
+  background-color: #45a049;
+}
+#paratest{
+  margin-top: 100px;
+}
+#cptele{
+  position: absolute;
+  top: 85%;
+  left: 35%;
+  
+}
+#cpwhat{
+  position: absolute;
+  top: 85%;
+  left: 57%;
+}

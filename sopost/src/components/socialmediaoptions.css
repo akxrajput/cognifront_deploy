@@ -1,0 +1,46 @@
+/* SocialMediaOptions.css */
+
+.options{
+  position: absolute;
+  top: 30%;
+  left: 75%;
+    max-width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #070707;
+    border-radius: 5px;
+    box-shadow: 0 0 10px  rgb(0, 255, 166);
+  }
+  
+  p{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+ .social-lable{
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .social-input {
+    margin-right: 5px;
+  }
+  #btn-setplat{
+    margin-top: 10px;
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    height: 35px;
+    width: 110px;
+    background-color:  #4dffb8;
+    border: none;
+    border-radius: 10px;
+
+  }
+  #btn-setplat:hover{
+    background-color:#45a049 ;
+  }
+ 
+  
+  

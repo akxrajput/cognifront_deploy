@@ -1,0 +1,31 @@
+.date-timer{
+    height: 150px;
+    width: 300px;
+   position: absolute;
+   top: 40%;
+   left: 78%;
+   box-shadow: 0 0 10px rgba(3, 240, 113, 0.889);
+   text-align: center;
+   border: 1px solid black;
+   border-radius: 10px;
+}
+
+.date-timer :hover{
+    
+   background-color:  rgba(0, 255, 128, 0.882);
+   box-shadow: rgba(53, 54, 53, 0.332) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#btn-timeset{
+   background-color:  #4dffb8;
+   position: absolute;
+   top: 110%;
+   left: 31%;
+   height: 35px;
+   width: 110px;
+   border: none;
+   border-radius: 10px;
+}
+#btn-timeset:hover{
+   background-color: #45a049;
+}
