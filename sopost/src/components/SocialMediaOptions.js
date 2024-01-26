@@ -23,7 +23,7 @@ const SocialMediaOptions = () => {
   const handleSetPlatform = async () => {
     try {
       // Send a POST request to your backend endpoint
-      const response = await fetch('/api/platform', {
+      const response = await fetch('https://cognifront-deploy.vercel.app/api/platform', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
