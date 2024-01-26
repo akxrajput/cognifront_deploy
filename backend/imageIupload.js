@@ -9,12 +9,9 @@ const nodemailer = require('nodemailer');
 const ejs = require('ejs');
 
 app.set('view engine', 'ejs');
-const corsOptions = {
-  origin: 'https://cognifront-deploy-test.vercel.app',
-  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-};
 
-app.use(cors(corsOptions));
+
+app.use(cors());  
 
 
 
