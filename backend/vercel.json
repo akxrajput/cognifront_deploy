@@ -4,6 +4,10 @@
     { "src": "server.js", "use": "@vercel/node" }
   ],
   "routes": [
-    { "src": "/api/(.*)" }
-  ]
+    { "handle": "vercel", "src": "/api/(.*)" }
+  ],
+  "env": {
+    "NODE_ENV": "production",
+    "PORT": 3000
+  }
 }
