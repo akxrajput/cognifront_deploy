@@ -109,7 +109,7 @@ const Main = () => {
     const formData = new FormData();
     formData.append('image', selectedFile);
 
-    fetch('/api/upload', {
+    fetch('https://cognifront-deploy.vercel.app/api/upload', {
       method: 'POST',
       body: formData,
     })
@@ -132,7 +132,7 @@ const Main = () => {
     const selectedText = getSelectedTextWithFormatting();
     const finalMessage = `${selectedText}${caption.slice(selectedText.length)}`;
 
-    fetch('/api/caption', {
+    fetch('https://cognifront-deploy.vercel.app/api/caption', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
