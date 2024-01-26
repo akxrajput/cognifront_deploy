@@ -32,7 +32,7 @@ const Time = () => {
     
     try {
       // Make an HTTP POST request to the backend
-      const response = await axios.post('/api/time', { dateTime: formattedDateTime });
+      const response = await axios.post('https://cognifront-deploy.vercel.app/api/time', { dateTime: formattedDateTime });
       console.log('API Response:', response.data);
     } catch (error) {
       console.error('Error sending data to the backend:', error);
