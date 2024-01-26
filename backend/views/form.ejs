@@ -1,0 +1,96 @@
+<!-- form.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Data</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #181818;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      text-align: center;
+      color: #61dafb;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background: #282c35;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      margin-bottom: 15px;
+      padding: 20px;
+      transition: transform 0.3s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    li:hover {
+      transform: scale(1.05);
+    }
+
+    strong {
+      color: #61dafb;
+    }
+
+    p {
+      margin: 10px 0;
+      color: #fff;
+    }
+
+    img {
+      max-width: 200px;
+      max-height: 200px;
+      border-radius: 8px;
+      margin-top: 15px;
+      box-shadow: 0px 0px 10px rgba(97, 218, 251, 0.97);
+    }
+
+    /* Optional: Add some responsive styles */
+    @media (max-width: 768px) {
+      body {
+        padding: 10px;
+      }
+
+      li {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+ 
+  <% if (data.length > 0) { %>
+    <ul>
+      <% data.forEach(item => { %>
+        <li>
+          <img src="<%= item.url %>" alt="Uploaded Image">
+          <p><strong>Date:</strong> <%= item.date %></p>
+          <p><strong>Time:</strong> <%= item.time %></p>
+          <p><strong>Platform:</strong> <%= item.platform %></p>
+          <p><strong>Message:</strong> <%= item.message %></p>
+        </li>
+      <% }); %>
+    </ul>
+  <% } else { %>
+    <p style="color: #fff;">No data available</p>
+  <% } %>
+</body>
+</html>
