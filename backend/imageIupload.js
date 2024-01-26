@@ -9,6 +9,18 @@ const nodemailer = require('nodemailer');
 const ejs = require('ejs');
 
 app.set('view engine', 'ejs');
+const corsOptions = {
+  origin: 'https://cognifront-deploy-test.vercel.app',
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+};
+
+app.use(cors(corsOptions));
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', 'https://cognifront-deploy-test.vercel.app');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  next();
+});
 
 
 cloudinary.config({ 
